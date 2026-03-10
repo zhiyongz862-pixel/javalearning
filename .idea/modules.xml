@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Day06Method/Day06Method.iml" filepath="$PROJECT_DIR$/Day06Method/Day06Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06Method/Day06Method.iml" filepath="$PROJECT_DIR$/day06Method/Day06Method.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01_RuMen/day01_rumen.iml" filepath="$PROJECT_DIR$/day01_RuMen/day01_rumen.iml" />
       <module fileurl="file://$PROJECT_DIR$/day04_PanDuanHeXunHuan/day04_PanDuanHeXunHuan.iml" filepath="$PROJECT_DIR$/day04_PanDuanHeXunHuan/day04_PanDuanHeXunHuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05Array/day05Array.iml" filepath="$PROJECT_DIR$/day05Array/day05Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07Exercise/day07Exercise.iml" filepath="$PROJECT_DIR$/day07Exercise/day07Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08OOP/day08OOP.iml" filepath="$PROJECT_DIR$/day08OOP/day08OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/javalearning.iml" filepath="$PROJECT_DIR$/javalearning.iml" />
     </modules>
   </component>

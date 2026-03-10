@@ -20,7 +20,18 @@
 
 + print这个api默认不换行,println这个api默认换行 
 
-+ option control + v自动补齐代码的右边 
++ option command + v自动补齐代码的右边或者右边，比如写个10，按这个快捷键会自动补全 int i = 10; 
+
++ option command + m 自动抽取方法
+
++ Option + command + L 自动排版
+
++ Command D 自动复制该行并复制到下一行
+
++ Control + n 自动生成构造函数，get set方法等 
+
+  + 也可以下载ptg插件
+
 
 # 3.一些学习当中需要注意的
 
