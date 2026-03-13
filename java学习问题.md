@@ -26,6 +26,8 @@
 
 + Option + command + L 自动排版
 
++ Option + command + T 自动包裹
+
 + Command D 自动复制该行并复制到下一行
 
 + Control + n 自动生成构造函数，get set方法等 
@@ -111,7 +113,7 @@ double d = sc.nextDouble();//录入的整数，小数都会看做小数。
 System.out.println(d);
 ```
 
-# 二，方法底层细节 ：
+## 2，方法底层细节 ：
 
 ### 第一个细节：
 
@@ -179,7 +181,7 @@ System.out.println(s);
 //那么nextLine不会过滤前面和后面的空格，会把这一整行数据全部接收完毕。
 ```
 
-# 三、混用引起的后果
+## 三、混用引起的后果
 
 上面说的两套键盘录入不能混用，如果混用会有严重的后果。
 
@@ -205,7 +207,7 @@ System.out.println(s);//⑤
 
 所以，如果混用就会导致nextLine接收不到数据。
 
-# 四、结论（如何使用）
+## 四、结论（如何使用）
 
 键盘录入分为两套：
 
@@ -241,5 +243,69 @@ System.out.println("此时为整数：" + i);
 
 
 
+# 5.常用API
 
+## String类
+
+这是个常量类，构造函数做完之后他就不会改变了，主要api如下
+
++ 构造函数 可以传空,字符串常量，字符数组，二进制数组
+
++ .length():返回这个对象的字符串长度
++ .substring()
+  + .substring(start,end) 从strat开始截取到end，左闭右开 
+  + .substring(start) 从某个位置开始截取到最后
++ .charAt(index):字符串对应位置数组的字符值
++ .equal() 判断两个字符串是否值相等（如同变量的比较）
++ .toCharArray() 把一个字符串转换为字符数组
++ public int indexOf(String str) 查找参数字符串str在调用方法的字符串中第一次出现的索引，如果不存在，返回-1
+
+## StringBuilder类 插入和反转友好
+
++ 构造函数可以传空和字符串常量或者String对象
++ append(str):把str加到末尾，但是不产生新的对象，所以很快
++ .reverse() ，反转字符串
++ .toString() 转换成字符串类
+
+##  String Joiner 创建特定格式的字符串友好
+
++ 构造函数：String Joiner(',')，每个元素之间的间隔是‘，’,如果是3个参数，还规定了String的开始值和结束值
+
+```java
+        java.util.StringJoiner s  = new java.util.StringJoiner(",");
+        // 三个参数 间隔符号/这个字符串一开始是啥/这个字符串终止符号是啥
+        java.util.StringJoiner s1 = new java.util.StringJoiner(",","[","]");
+        // 就是一个[]
+        s1.add("1").add("2");
+        System.out.println(s1);
+```
+
++ Add() 类似于String Builder的 append方法
+
+## ArrayList类，集合类
+
+```java
+package Demo;
+// 怎样创建一个集合
+public class ArrayList {
+    // 集合里面有泛形的概念
+    public static void main(String[] args) {
+        java.util.ArrayList <String> s = new java.util.ArrayList<String>();
+        // 集合对象默认不打印地址，打印对象，空对象就是一个[]括号
+        System.out.println(s);
+    }
+}
+
+```
+
+长度可变，但是只能存入引用数据类型
+
+| 方法名                                | 说明                                   |
+| ------------------------------------- | -------------------------------------- |
+| public boolean add(要添加的元素)      | 将指定的元素追加到此集合的末尾         |
+| public boolean remove(要删除的元素)   | 删除指定元素,返回值表示是否删除成功    |
+| public E  remove(int   index)         | 删除指定索引处的元素，返回被删除的元素 |
+| public E   set(int index,E   element) | 修改指定索引处的元素，返回被修改的元素 |
+| public E   get(int   index)           | 返回指定索引处的元素                   |
+| public int   size()                   | 返回集合中的元素的个数                 |
 
