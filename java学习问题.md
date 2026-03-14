@@ -30,6 +30,8 @@
 
 + Command D 自动复制该行并复制到下一行
 
++ Alt+回车 自动生成新方法
+
 + Control + n 自动生成构造函数，get set方法等 
 
   + 也可以下载ptg插件
