@@ -30,7 +30,7 @@
 
 + Command D 自动复制该行并复制到下一行
 
-+ Command N 自动补全，生成构造函数（但是要注意，idea的keymap要设置成macos）
++ Command N 自动补全，生成构造函数（但是要注意，idea的keymap要设置成macos）也就是win里面的alt+insert
 
 + Alt+回车 自动生成新方法(option+enter)
 

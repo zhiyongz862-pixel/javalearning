@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/day03_YunSuanFu" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Day16And17OOPExercise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day18API" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Day22set" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
